@@ -5,8 +5,11 @@ class Solution:
         answer = 0
         
         while grid[0]: # 내부 리스트에 원소가 존재하지 않을 때까지 반복
+
             for i in grid:
-                i.sort() # 리스트를 오름차순 정렬한다
+                i.sort()
+            
+            for i in grid:
                 max_list.append(i[-1]) # 가장 큰 수를 리스트에 저장하고 꺼낸다
                 i.pop()
         
